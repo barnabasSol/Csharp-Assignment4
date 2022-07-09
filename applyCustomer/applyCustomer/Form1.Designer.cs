@@ -36,10 +36,10 @@ namespace applyCustomer
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.fnametxt = new System.Windows.Forms.TextBox();
+            this.lnametxt = new System.Windows.Forms.TextBox();
+            this.nationalitytxt = new System.Windows.Forms.TextBox();
+            this.addresstxt = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -70,7 +70,6 @@ namespace applyCustomer
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label3
             // 
@@ -112,33 +111,33 @@ namespace applyCustomer
             this.label6.TabIndex = 6;
             this.label6.Text = "address";
             // 
-            // textBox1
+            // fnametxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
-            this.textBox1.TabIndex = 7;
+            this.fnametxt.Location = new System.Drawing.Point(148, 84);
+            this.fnametxt.Name = "fnametxt";
+            this.fnametxt.Size = new System.Drawing.Size(197, 20);
+            this.fnametxt.TabIndex = 7;
             // 
-            // textBox2
+            // lnametxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 20);
-            this.textBox2.TabIndex = 8;
+            this.lnametxt.Location = new System.Drawing.Point(148, 116);
+            this.lnametxt.Name = "lnametxt";
+            this.lnametxt.Size = new System.Drawing.Size(197, 20);
+            this.lnametxt.TabIndex = 8;
             // 
-            // textBox3
+            // nationalitytxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 195);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 20);
-            this.textBox3.TabIndex = 9;
+            this.nationalitytxt.Location = new System.Drawing.Point(150, 195);
+            this.nationalitytxt.Name = "nationalitytxt";
+            this.nationalitytxt.Size = new System.Drawing.Size(195, 20);
+            this.nationalitytxt.TabIndex = 9;
             // 
-            // textBox4
+            // addresstxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(135, 231);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(210, 20);
-            this.textBox4.TabIndex = 10;
+            this.addresstxt.Location = new System.Drawing.Point(135, 231);
+            this.addresstxt.Name = "addresstxt";
+            this.addresstxt.Size = new System.Drawing.Size(210, 20);
+            this.addresstxt.TabIndex = 10;
             // 
             // button2
             // 
@@ -148,6 +147,7 @@ namespace applyCustomer
             this.button2.TabIndex = 12;
             this.button2.Text = "cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -166,10 +166,10 @@ namespace applyCustomer
             this.ClientSize = new System.Drawing.Size(609, 340);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addresstxt);
+            this.Controls.Add(this.nationalitytxt);
+            this.Controls.Add(this.lnametxt);
+            this.Controls.Add(this.fnametxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -193,10 +193,10 @@ namespace applyCustomer
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox fnametxt;
+        private System.Windows.Forms.TextBox lnametxt;
+        private System.Windows.Forms.TextBox nationalitytxt;
+        private System.Windows.Forms.TextBox addresstxt;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
     }

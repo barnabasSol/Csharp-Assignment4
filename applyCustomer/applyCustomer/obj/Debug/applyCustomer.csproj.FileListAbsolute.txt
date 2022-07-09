@@ -1,0 +1,10 @@
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\bin\Debug\applyCustomer.exe.config
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\bin\Debug\applyCustomer.exe
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\bin\Debug\applyCustomer.pdb
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.csproj.AssemblyReference.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.Form1.resources
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.Properties.Resources.resources
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.csproj.GenerateResource.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.csproj.CoreCompileInputs.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.exe
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\applyCustomer\applyCustomer\obj\Debug\applyCustomer.pdb

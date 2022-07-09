@@ -17,14 +17,18 @@ namespace applyCustomer
             InitializeComponent();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Customer c = new Customer(fnametxt.Text, lnametxt.Text,
+                nationalitytxt.Text, dateTimePicker1.Value.ToString("dd-mm-yyyy"), addresstxt.Text);
+            c.addCustomer();
+            MessageBox.Show("customer: "+c.first_name+" "+c.last_name+" succesfully added!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
