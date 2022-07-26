@@ -18,17 +18,62 @@ namespace applyCustomer
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void addbtn_Click(object sender, EventArgs e)
         {
-            Customer c = new Customer(fnametxt.Text, lnametxt.Text,
-                nationalitytxt.Text, dateTimePicker1.Value.ToString("dd-mm-yyyy"), addresstxt.Text);
-            c.addCustomer();
-            MessageBox.Show("customer: "+c.first_name+" "+c.last_name+" succesfully added!");
+            bool allCorrect = true;
+            Customer cc = new Customer();
+            if (string.IsNullOrEmpty(fnametxt.Text) || int.TryParse(lnametxt.Text, out int num1))
+            {
+                errorProvider1.SetError(fnametxt, "something wrong here");
+                allCorrect = false;
+
+            }
+            if (string.IsNullOrEmpty(lnametxt.Text) || int.TryParse(lnametxt.Text, out int num2))
+            {
+                errorProvider1.SetError(lnametxt, "something wrong here");
+                allCorrect = false;
+
+            }
+            if (!int.TryParse(agetxt.Text, out int num3))
+            {
+                errorProvider1.SetError(agetxt, "something wrong here");
+                allCorrect = false;
+            }
+            if (string.IsNullOrEmpty(dateTimePicker1.Value.ToString("dd/mm/yyyy"))){
+                errorProvider1.SetError(dateTimePicker1, "something wrong here");
+            }
+            if (string.IsNullOrEmpty(fnametxt.Text))
+            {
+                errorProvider1.SetError(nationalitytxt, "something wrong here");
+                allCorrect = false;
+            }
+            if (string.IsNullOrEmpty(addresstxt.Text))
+            {
+                errorProvider1.SetError(addresstxt, "something wrong here");
+                allCorrect = false;
+            }
+            if (allCorrect)
+            {
+                cc.first_name = fnametxt.Text;
+                cc.last_name = lnametxt.Text;
+                cc.age = int.Parse(agetxt.Text);
+                cc.nationality = nationalitytxt.Text;
+                cc.birth_date = dateTimePicker1.Value.ToString("dd/mm/yyyy");
+                cc.address = addresstxt.Text;
+                cc.addCustomer(cc);
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Customer.get_customer_list();
+            }
+
+
+
+
+
+
+
+            // MessageBox.Show("successful added!");
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+      
     }
 }

@@ -8,8 +8,10 @@ namespace applyCustomer
 {
     class Customer
     {
+        private static List<Customer> customer_list = new List<Customer>();
         public string first_name { get; set; }
         public string last_name { get; set; }
+        public int age { get; set; }
         public string nationality { get; set; }
         public string birth_date { get; set; }
         public string address { get; set; }
@@ -18,17 +20,23 @@ namespace applyCustomer
         {
 
         }
-        public Customer(string fname, string lname, string natn, string bdate, string ads)
+        public Customer(string fname, string lname, int a, string natn, string bdate, string ads)
         {
             first_name = fname;
             last_name = lname;
+            age = a;
             nationality = natn;
             birth_date = bdate;
             address = ads;
         }
-        public void addCustomer()
+        public void addCustomer(Customer c)
         {
-            Console.WriteLine("customer added");
+            customer_list.Add(c);
+        }
+
+        public static List<Customer> get_customer_list()
+        {
+            return customer_list;
         }
        
     }
