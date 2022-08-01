@@ -15,12 +15,13 @@ namespace applyCustomer
         public string nationality { get; set; }
         public string birth_date { get; set; }
         public string address { get; set; }
-
-       public  Customer()
+        public bool male { get; set; }
+        public bool female { get; set; }
+        public  Customer()
         {
 
         }
-        public Customer(string fname, string lname, int a, string natn, string bdate, string ads)
+        public Customer(string fname, string lname, int a, string natn, string bdate, string ads, bool mle, bool fem)
         {
             first_name = fname;
             last_name = lname;
@@ -28,6 +29,8 @@ namespace applyCustomer
             nationality = natn;
             birth_date = bdate;
             address = ads;
+            male = mle;
+            female = fem;
         }
         public void addCustomer(Customer c)
         {

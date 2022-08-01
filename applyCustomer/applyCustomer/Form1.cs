@@ -60,6 +60,8 @@ namespace applyCustomer
                 cc.nationality = nationalitytxt.Text;
                 cc.birth_date = dateTimePicker1.Value.ToString("dd/mm/yyyy");
                 cc.address = addresstxt.Text;
+                cc.male = malebox.Checked;
+                cc.female = femalbox.Checked;
                 cc.addCustomer(cc);
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = Customer.get_customer_list();
