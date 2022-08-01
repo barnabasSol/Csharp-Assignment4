@@ -66,13 +66,6 @@ namespace applyCustomer
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = Customer.get_customer_list();
             }
-
-
-
-
-
-
-
             // MessageBox.Show("successful added!");
         }
 
