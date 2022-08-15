@@ -42,7 +42,7 @@ namespace menub
 
         private void refreshbtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null;
+          //  dataGridView1.DataSource = null;
             dataGridView1.DataSource = Product.get_products();
         }
     }
