@@ -25,15 +25,27 @@ namespace menub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserControl1[] u = new UserControl1[Product.get_products().Count];
+
+            flowLayoutPanel1.Controls.Clear();
             for (int i = 0; i < Product.get_products().Count; i++)
             {
-                u[i] = new UserControl1();
-                u[i].name = Product.get_products()[i].name;
-                u[i].price = Product.get_products()[i].price;
-                u[i].count = Product.get_products()[i].count;
-                u[i].type = Product.get_products()[i].type;
-                flowLayoutPanel1.Controls.Add(u[i]);
+                UserControl1 itemc = new UserControl1();
+                itemc.name = Product.get_products()[i].name;
+                itemc.price = Product.get_products()[i].price;
+                itemc.count = Product.get_products()[i].count;
+                itemc.type = Product.get_products()[i].type;
+                itemc.Click += (object s, EventArgs ev) =>
+                {
+                    DetailTabelForm d = new DetailTabelForm();
+                    d.name = itemc.name;
+                    d.price = itemc.price;
+                    d.count = itemc.count;
+                    d.type = itemc.type;
+                    d.Show();
+
+                };
+
+                flowLayoutPanel1.Controls.Add(itemc);
             }
         }
     }

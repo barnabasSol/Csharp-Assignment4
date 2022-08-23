@@ -41,7 +41,6 @@ namespace menub
             Form ff = new Form3();
             ff.MdiParent = this;
             ff.Show();
-            
         }
     }
 }

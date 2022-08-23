@@ -23,3 +23,4 @@ C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\parent
 C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\parent-form and search method\menub\obj\Debug\menub.exe
 C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\parent-form and search method\menub\obj\Debug\menub.pdb
 C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\parent-form and search method\menub\obj\Debug\menub.UserControl1.resources
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\Csharp-Assignment4\parent-form and search method\menub\obj\Debug\menub.DetailTabelForm.resources
